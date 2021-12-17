@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- CSS Personalizada -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- CSS Cellphone -->
+    <link rel="stylesheet" href="css/cellphone.css">
     <!-- CSS Font-Awesome -->
     <link rel="stylesheet" href="vendor/fontawesome-free-5.15.4-web/css/all.min.css">
 
@@ -17,10 +19,16 @@
 </head>
 
 <body>
-    
-    <h1>Get <em class="time">Time</em> in Real<em class="time">Time</em></h1>
 
     <div class="cellphone">
+        <div class="cellphone__filter hide">
+            
+        </div>
+
+        <div class="switchOnOff" id="switch">
+
+        </div>
+       <div class="cellphone__screen unhide">
         <div class="cellphone__infos">
             <span style="float: left;">guileshi</span>
             <div style="float: right;">
@@ -34,7 +42,7 @@
         </div>
         
         <div class="oclock">
-            3:44 PM
+            3<span class="oclock__dots">:</span>44 PM
         </div>
         <div class="oclock__details">
             sunday, <br> 
@@ -46,12 +54,31 @@
                 <i class="fas fa-sun fa-3x"></i>
             </div>
             <div class="timecard__info">
-                Time, Hours, Location
+                Weather, Location, Time
             </div>
         </div>
 
+        <div class="unlock">
+            <span>
+                Slide to unlock
+            </span>
+        </div>
+
+        <div class="more">
+            <span>
+                <i class="fas fa-ellipsis-h fa-2x"></i>
+            </span>
+        </div>
+       </div>
+
     </div>
 
+
+    <div>
+        <p id="demo">
+
+        </p>
+    </div>
 
     <!-- Importar Jquery -->
     <script src="js/jquery-min.js"></script>

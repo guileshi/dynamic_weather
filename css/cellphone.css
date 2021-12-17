@@ -1,0 +1,189 @@
+.cellphone{
+
+    width: calc(100vw - 75%);
+    height: auto;
+    
+    background: url(../img/wallpaper.jpg);
+    background-position: center;
+    box-shadow: 12px 24px 24px 12px rgba(0, 0, 0, 0.3), inset 0 0 10px rgba(0,0,0, 0.6);
+    
+    border-radius: 12px;
+    border: 6px solid var(--accent-8);
+    border-top-width: 30px;
+    border-bottom-width: 20px;
+
+    padding: var(--px16);
+    
+    position: relative;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cellphone__screen{
+    animation: fade-in-out 0.3s ease-out;
+}
+
+.cellphone__filter{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--accent-7);
+    z-index: 10000;
+
+    animation: fade-in-out 0.3s ease-out;
+}
+
+.switchOnOff{
+    position: absolute;
+    right: -10px;
+    top: 25%;
+    height: 40px;
+    border-radius: 12px;
+    width: 5px;
+    background: var(--accent-8);
+
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.cellphone__infos{
+    position: absolute;
+    top: 0;
+    right: .5rem;
+    left: 0.5rem;
+
+    color: var(--accent-7);
+
+    pointer-events: none;
+    cursor: none;
+}
+
+.cellphone__battery{
+    color: goldenrod;
+}
+
+.oclock{
+    text-align: center;
+
+    margin-top: 3rem;
+    
+    font-size: var(--px64);
+    font-weight: var(--semibold);
+    
+    pointer-events: none;
+    cursor: none;
+
+    color: var(--accent-7);
+
+}
+
+.oclock__details{
+    font-size: var(--px18);
+    font-weight: var(--light);
+    text-align: center;
+    color: var(--accent-6);
+
+    pointer-events: none;
+    cursor: none;
+}
+
+
+.timecard{
+    display: flex;
+
+    background: rgba(0, 0, 0, 0.2);
+
+    padding: 8px 0;
+    border-radius: 8px;
+
+    margin-top: 5rem;
+
+    color: var(--accent-7);
+
+    pointer-events: none;
+    cursor: none;
+}
+
+.timecard__icon{
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: scale-in-out 3s ease infinite;
+}
+
+.timecard__info{
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unlock{
+    margin-top: 7rem;
+    text-align: center;
+    animation: blink 6s ease infinite;
+
+    color: var(--accent-7);
+
+    pointer-events: none;
+    cursor: none;
+}
+
+.more{
+    margin-top: var(--px64);
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+
+    pointer-events: none;
+    cursor: none;
+}
+
+.oclock__dots{
+    animation: blink 1.4s ease infinite;
+}
+
+@keyframes blink {
+    0%, 10%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    90%, 100%{
+        opacity: 0;
+    }
+}
+
+@keyframes scale-in-out {
+    0%, 10%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    90%, 100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes fade-in-out {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}

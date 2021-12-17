@@ -1,15 +1,28 @@
-var celular;
-var tablet;
-var pc;
+$('#switch').click(() => {
+
+    $('.cellphone__screen').toggleClass('hide unhide')
+    $('.cellphone__filter').toggleClass('hide unhide')
+
+})
+
+
+var x = document.getElementById("demo");
+    
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude +
+            "<br>Longitude: " + position.coords.longitude;
+    }
 
 $(window).load(function () {
-    if (window.screen.width < 576.98) {
 
-        celular = true;
-    } else if (window.screen.width > 767.98 && window.screen.width <= 1024) {
+    getLocation();
 
-        tablet = true;
-    } else if (window.screen.width > 1025) {
-
-    }
-});
+})

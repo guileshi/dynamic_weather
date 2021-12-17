@@ -87,90 +87,16 @@ input, button {
 label {
     font-size: var(--px16);
 }
+
+.hide{
+    opacity: 0;
+    visibility: hidden;
+}
+.unhide{
+    opacity: 1;
+    visibility: visible;
+}
 /* --- */
-
-h1{
-    font-family: var(--poppins);
-    font-size: var(--px36);
-    color: var(--accent-7);
-}
-
-.cellphone{
-    width: calc(100vw - 70%);
-    height: auto;
-    
-    background: var(--accent-0);
-    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.3);
-    
-    border-radius: 8px;
-    border: 4px solid var(--accent-8);
-    border-top-width: 30px;
-    border-bottom-width: 20px;
-
-    padding: var(--px16);
-    
-    position: relative;
-
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-.cellphone__infos{
-    position: absolute;
-    top: 0;
-    right: .5rem;
-    left: 0.5rem;
-
-    color: var(--accent-7);
-}
-
-.cellphone__battery{
-    color: goldenrod;
-}
-
-.oclock{
-    text-align: center;
-
-    margin-top: 1.5rem;
-    
-    font-size: var(--px64);
-    font-weight: var(--semibold);
-
-}
-
-.oclock__details{
-    font-size: var(--px18);
-    font-weight: var(--light);
-    text-align: center;
-}
-
-
-.timecard{
-    display: flex;
-
-    background: rgba(255, 255, 255, 0.4);
-    border: 2px solid rgba(255, 255, 255, 0.8);
-
-    margin-top: var(--px48);
-}
-
-.timecard__icon{
-    width: 20%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.timecard__info{
-    width: 80%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /* media query */
 /* sm */
