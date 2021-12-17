@@ -1,0 +1,188 @@
+/* Importação Fonte Poppins */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* Importação Fonte Comic Sans */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap');
+:root {
+    /* color */
+    --baseDark: #1A2C40;
+    --base: #1565C0;
+    --baseLight: #538ACA;
+    --accent-10: #000;
+    --accent-9: #202020;
+    --accent-8: #282828;
+    --accent-7: #343434;
+    --accent-6: #484848;
+    --accent-5: #5B5B5B;
+    --accent-4: #6F6F6F;
+    --accent-3: #C7C7C7;
+    --accent-2: #DBDBDB;
+    --accent-1: #EBEBEB;
+    --accent-0: #fff;
+    --accent-green: #05C928;
+    --accent-greenDark: #04B023;
+    --accent-blue: #3B5998;
+    --accent-blueDark: #324A80;
+    --accent-purple: #C13584;
+    --accent-purpleDark: #A82D73;
+    /* typeface weight's */
+    --extrabold: 800;
+    --bold: 700;
+    --semibold: 600;
+    --medium: 500;
+    --regular: 400;
+    --light: 300;
+    /* pixels to rem */
+    --px64: 4rem;
+    --px48: 3rem;
+    --px36: 2.25em;
+    --px32: 2rem;
+    --px24: 1.5rem;
+    --px18: 1.125rem;
+    --px16: 1rem;
+    --px12: 0.750rem;
+    /* typeface's */
+    --poppins: Poppins, sans-serif;
+    --opens-sans: "Open Sans", sans-serif;
+    /* transition */
+    --transitionc: all 0.3s ease-out;
+}
+
+/* general */
+
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.015rem;
+
+    font-family: var(--poppins);
+}
+
+body{
+    background: var(--accent-1);
+    height: 100vh;
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+label {
+    font-size: var(--px16);
+}
+/* --- */
+
+h1{
+    font-family: var(--poppins);
+    font-size: var(--px36);
+    color: var(--accent-7);
+}
+
+.cellphone{
+    width: calc(100vw - 70%);
+    height: auto;
+    
+    background: var(--accent-0);
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.3);
+    
+    border-radius: 8px;
+    border: 4px solid var(--accent-8);
+    border-top-width: 30px;
+    border-bottom-width: 20px;
+
+    padding: var(--px16);
+    
+    position: relative;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.cellphone__infos{
+    position: absolute;
+    top: 0;
+    right: .5rem;
+    left: 0.5rem;
+
+    color: var(--accent-7);
+}
+
+.cellphone__battery{
+    color: goldenrod;
+}
+
+.oclock{
+    text-align: center;
+
+    margin-top: 1.5rem;
+    
+    font-size: var(--px64);
+    font-weight: var(--semibold);
+
+}
+
+.oclock__details{
+    font-size: var(--px18);
+    font-weight: var(--light);
+    text-align: center;
+}
+
+
+.timecard{
+    display: flex;
+
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+
+    margin-top: var(--px48);
+}
+
+.timecard__icon{
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timecard__info{
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* media query */
+/* sm */
+@media (max-width: 767.98px) {
+}
+
+/* md */
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    
+}
