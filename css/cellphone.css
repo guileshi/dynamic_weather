@@ -5,10 +5,10 @@
     
     background: url(../img/wallpaper.jpg);
     background-position: center;
-    box-shadow: 12px 24px 24px 12px rgba(0, 0, 0, 0.3), inset 0 0 10px rgba(0,0,0, 0.6);
+    box-shadow: 12px 24px 24px 12px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0,0,0, 0.6);
     
     border-radius: 12px;
-    border: 6px solid var(--accent-8);
+    border: 2px solid var(--accent-1);
     border-top-width: 30px;
     border-bottom-width: 20px;
 
@@ -41,16 +41,66 @@
 
 .switchOnOff{
     position: absolute;
-    right: -10px;
+    right: -5px;
     top: 25%;
     height: 40px;
     border-radius: 12px;
     width: 5px;
-    background: var(--accent-8);
+    background: var(--accent-1);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
 
     cursor: pointer;
     pointer-events: all;
 }
+
+.cellphone__audio{
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: var(--accent-2);
+
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.4);
+
+    height: 6px;
+    width: 50px;
+
+    border-radius: 50px;
+}
+
+.cellphone__camera{
+    position: absolute;
+    top: -22px;
+    right: 64px;
+
+    background: var(--accent-2);
+
+    box-shadow: inset 0 0 12px 12px rgba(0, 0, 0, 0.4);
+
+    height: 16px;
+    width: 16px;
+
+    border-radius: 100px;
+}
+
+.cellphone__flash{
+    position: absolute;
+    top: -20px;
+    right: 40px;
+
+    background: var(--accent-2);
+
+    box-shadow: inset 0 0 12px 12px rgba(0, 0, 0, 0.4);
+
+    height: 12px;
+    width: 12px;
+
+    border-radius: 100px;
+}
+
+/*  */
 
 .cellphone__infos{
     position: absolute;
